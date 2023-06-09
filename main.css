@@ -1,0 +1,37 @@
+*{
+margin: 0;
+padding: 0;
+outline: red dotted 1px;
+}
+
+.error-container{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 90px;
+}
+
+.error-container h1 {
+    display: flex;  
+}
+
+.main-container{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    height: 700px;
+    width: 700px;   
+}
+.main-container .card-box{
+background-color: aqua;
+}
+
+
+@media (max-width: 750px) {
+    .main-container{
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
